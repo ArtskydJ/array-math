@@ -30,6 +30,30 @@ n is a positive integer
 	aMath.divisors(100)
 	// -> [1, 2, 4, 5, 10, 20, 25, 50, 100]
 
+##aMath.isPrime(n)
+
+n is a positive integer
+
+	aMath.isPrime(2)
+	// -> true
+	aMath.isPrime(3)
+	// -> true
+	aMath.isPrime(4)
+	// -> false
+	aMath.isPrime(7)
+	// -> true
+	aMath.isPrime(96)
+	// -> false
+	aMath.isPrime(97)
+	// -> true
+	aMath.isPrime(100)
+	// -> false
+	aMath.isPrime(113)
+	// -> true
+	aMath.isPrime(117)
+	// -> false
+
+
 ##aMath.multiply(a)
 
 a is an array of numbers (integers, floats, negative, whatever)
