@@ -1,0 +1,32 @@
+{
+  "name": "array-math",
+  "version": "0.0.1",
+  "main": "./index.js",
+  "author": {
+    "name": "ArtskydJ",
+    "email": "josephdykstra@gmail.com"
+  },
+  "description": "Do math on arrays; find divisors of a number, sum an array, or multiply an array.",
+  "keywords": [
+    "math",
+	"array",
+    "divisors",
+	"sum",
+	"multiply"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArtskydJ/array-math.git"
+  },
+  "devDependencies": {
+    "tap": "~0.4.8"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tap ./test/*.js"
+  },
+  "dependencies": {
+  }
+}
