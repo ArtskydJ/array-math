@@ -18,15 +18,22 @@
 	return result
 }
 
-function divisors(n) {
+function divisors(n, opts) {
+	opts = opts?opts:{}
 	var result = [1]
-	for (var i=2; i<=n/2; i++) {
-		if (n%i==0) {
+	for (var i=2; i<=n/2; i++)
+		if (n%i==0)
 			result.push(i)
-		}
-	}
-	result.push(n)
+	if (!opts.proper)
+		result.push(n)
 	return result
+}
+
+function isPrime(n) {
+	for (var i=2; i<=n/2; i++)
+		if (n%i==0)
+			return false
+	return true
 }
 
 function multiply(a) {
@@ -40,6 +47,7 @@ function sum(a) {
 module.exports = {
 	factors: factors,
 	divisors: divisors,
+	isPrime: isPrime,
 	multiply: multiply,
 	sum: sum
 }
