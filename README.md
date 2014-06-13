@@ -1,6 +1,19 @@
 array-math
 ==========
 
+[![Build Status](https://travis-ci.org/ArtskydJ/array-math.svg?branch=master)](https://travis-ci.org/ArtskydJ/array-math)
+
+- [Install](https://github.com/ArtskydJ/array-math#install)
+- [Require](https://github.com/ArtskydJ/array-math#require)
+- [Methods](https://github.com/ArtskydJ/array-math#methods)
+	- [aMath.factors(n)](https://github.com/ArtskydJ/array-math#amathfactorsn)
+	- [aMath.divisors(n)](https://github.com/ArtskydJ/array-math#amathdivisorsn)
+	- [aMath.isPrime(n)](https://github.com/ArtskydJ/array-math#amathisprimen)
+	- [aMath.multiply(a)](https://github.com/ArtskydJ/array-math#amathmultiplya)
+	- [aMath.sum(a)](https://github.com/ArtskydJ/array-math#amathsuma)
+- [Example](https://github.com/ArtskydJ/array-math#example)
+- [License](https://github.com/ArtskydJ/array-math#license)
+
 ##Install
 	npm install array-math
 	
@@ -77,3 +90,7 @@ a is an array of numbers (integers, floats, negative, whatever)
 	// -> 6
 	aMath.sum([45, 20, 8.3])
 	// -> 73.3
+
+##License
+
+[MIT](http://opensource.org/licenses/MIT)
