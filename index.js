@@ -30,13 +30,31 @@ function divisors(n, opts) {
 }
 
 function isPrime(n) {
-	if (n===0)
+	if (!n)
 		return false
 	n = Math.abs(n)
 	for (var i=2; i<=n/2; i++)
 		if (n%i==0)
 			return false
 	return true
+}
+
+function range(low, high) {
+	if (!low) {
+		low = 0
+		high = 0
+	} else if (high && high<low) {
+		var t = low
+		low = high
+		high = t
+	} else if (!high) {
+		high = low
+		low = 0
+	}
+	var result = []
+	for(var i=low; i<high; i++)
+		result.push(i)
+	return result
 }
 
 function multiply(a) {
@@ -51,6 +69,7 @@ module.exports = {
 	factors: factors,
 	divisors: divisors,
 	isPrime: isPrime,
+	range: range,
 	multiply: multiply,
 	sum: sum
 }

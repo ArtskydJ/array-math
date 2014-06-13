@@ -1,17 +1,19 @@
 {
   "name": "array-math",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "./index.js",
   "author": {
     "name": "ArtskydJ",
     "email": "josephdykstra@gmail.com"
   },
-  "description": "Do math on arrays: find divisors or factors of a number, or sum or multiply an array.",
+  "description": "Do math on arrays: find divisors or factors of a number, sum or multiply an array, and more!",
   "keywords": [
     "math",
 	"array",
 	"factor",
     "divisor",
+	"prime",
+	"range",
 	"sum",
 	"multiply"
   ],
