@@ -1,21 +1,22 @@
 {
   "name": "array-math",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "./index.js",
   "author": {
     "name": "ArtskydJ",
     "email": "josephdykstra@gmail.com"
   },
-  "description": "Do math on arrays: find divisors or factors of a number, sum or multiply an array, and more!",
+  "description": "Do math on arrays: find divisors or factors of a number, sum or multiply an array, and much more!",
   "keywords": [
-    "math",
-	"array",
-	"factor",
+    "factor",
     "divisor",
-	"prime",
-	"range",
-	"sum",
-	"multiply"
+    "prime",
+    "range",
+    "sum",
+    "multiply",
+    "factorial",
+    "largest",
+    "smallest"
   ],
   "repository": {
     "type": "git",

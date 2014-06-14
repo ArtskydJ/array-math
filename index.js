@@ -40,7 +40,7 @@ function isPrime(n) {
 }
 
 function range(low, high) {
-	if (!low) {
+	if (typeof low === 'undefined') {
 		low = 0
 		high = 0
 	} else if (high && high<low) {
@@ -58,11 +58,17 @@ function range(low, high) {
 }
 
 function multiply(a) {
-	return a.reduce(function (memo, curr) { return memo*curr }, 1)
+	return a.reduce(function(memo, curr) { return memo*curr }, 1)
 }
 
 function sum(a) {
-	return a.reduce(function (memo, curr) { return memo+curr }, 0)
+	return a.reduce(function(memo, curr) { return memo+curr }, 0)
+}
+
+function factorial(high, low) {
+	if (typeof low === 'undefined')  low = 0
+	if (typeof high === 'undefined') high = 0
+	return multiply( range(low, high+1).filter(function(e) { return (e!==0) }) )
 }
 
 module.exports = {
@@ -71,5 +77,6 @@ module.exports = {
 	isPrime: isPrime,
 	range: range,
 	multiply: multiply,
-	sum: sum
+	sum: sum,
+	factorial: factorial
 }

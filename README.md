@@ -12,6 +12,7 @@ array-math
 	- [aMath.range(n[, m])](https://github.com/ArtskydJ/array-math#amathrangenm)
 	- [aMath.multiply(a)](https://github.com/ArtskydJ/array-math#amathmultiplya)
 	- [aMath.sum(a)](https://github.com/ArtskydJ/array-math#amathsuma)
+	- [aMath.factorial(h[, l])](https://github.com/ArtskydJ/array-math#amathfactorialhl)
 - [Example](https://github.com/ArtskydJ/array-math#example)
 - [License](https://github.com/ArtskydJ/array-math#license)
 
@@ -54,9 +55,13 @@ n is a positive integer
 
 ##aMath.range(n[, m])
 
+n is a number. If the m parameter was passed in, then n is the low number and m is the high number. If the m parameter was not passed in, then n is the high number. (See examples below.)
+
 	aMath.range(0)     // -> []
-	aMath.range(1)     // -> [1]
+	aMath.range(1)     // -> [0]
 	aMath.range(2)     // -> [0, 1]
+	aMath.range(2, 2)  // -> []
+	aMath.range(2, 3)  // -> [2]
 	aMath.range(3)     // -> [0, 1, 2]
 	aMath.range(10)    // -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 	aMath.range(2, 10) // -> [2, 3, 4, 5, 6, 7, 8, 9]
@@ -78,6 +83,27 @@ a is an array of numbers (integers, floats, negative, whatever)
 	aMath.sum([2, 96, 100])  // -> 198
 	aMath.sum([2, -96, 100]) // -> 6
 	aMath.sum([45, 20, 8.3]) // -> 73.3
+
+##aMath.factorial(h[, l])
+
+h is a number. It is the high number. It defaults to 0.  
+l is a number. It is the low number. It defaults to 0.  
+While multiplying, it will never multiply by 0.
+
+	aMath.factorial()      // -> 1
+	aMath.factorial(0)     // -> 1
+	aMath.factorial(1)     // -> 1
+	aMath.factorial(2)     // -> 2         (2x1)
+	aMath.factorial(3)     // -> 6         (3x2x1)
+	aMath.factorial(5)     // -> 120       (5x4x3x2x1)
+	aMath.factorial(5, 0)  // -> 120       (5x4x3x2x1)
+	aMath.factorial(5, 1)  // -> 120       (5x4x3x2x1)
+	aMath.factorial(5, 2)  // -> 120       (5x4x3x2)
+	aMath.factorial(5, 3)  // -> 60        (5x4x3)
+	aMath.factorial(5, 4)  // -> 20        (5x4)
+	aMath.factorial(10)    // -> 3628800   (10x9x8x7x6x5x4x3x2x1)
+	aMath.factorial(10, 3) // -> 1814400   (10x9x8x7x6x5x4x3)
+	aMath.factorial(10, 5) // -> 151200    (10x9x8x7x6x5)
 
 ##License
 
