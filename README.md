@@ -9,10 +9,10 @@ array-math
 	- [aMath.factors(n)](https://github.com/ArtskydJ/array-math#amathfactorsn)
 	- [aMath.divisors(n)](https://github.com/ArtskydJ/array-math#amathdivisorsn)
 	- [aMath.isPrime(n)](https://github.com/ArtskydJ/array-math#amathisprimen)
-	- [aMath.range(n[, m])](https://github.com/ArtskydJ/array-math#amathrangenm)
+	- [aMath.range(n[, m])](https://github.com/ArtskydJ/array-math#amathrangen-m)
 	- [aMath.multiply(a)](https://github.com/ArtskydJ/array-math#amathmultiplya)
 	- [aMath.sum(a)](https://github.com/ArtskydJ/array-math#amathsuma)
-	- [aMath.factorial(h[, l])](https://github.com/ArtskydJ/array-math#amathfactorialhl)
+	- [aMath.factorial(h[, l])](https://github.com/ArtskydJ/array-math#amathfactorialh-l)
 - [Example](https://github.com/ArtskydJ/array-math#example)
 - [License](https://github.com/ArtskydJ/array-math#license)
 
