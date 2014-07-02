@@ -3,18 +3,18 @@ array-math
 
 [![Build Status](https://travis-ci.org/ArtskydJ/array-math.svg?branch=master)](https://travis-ci.org/ArtskydJ/array-math)
 
-- [Install](https://github.com/ArtskydJ/array-math#install)
-- [Require](https://github.com/ArtskydJ/array-math#require)
-- [Methods](https://github.com/ArtskydJ/array-math#methods)
-	- [aMath.factors(n)](https://github.com/ArtskydJ/array-math#amathfactorsn)
-	- [aMath.divisors(n)](https://github.com/ArtskydJ/array-math#amathdivisorsn)
-	- [aMath.isPrime(n)](https://github.com/ArtskydJ/array-math#amathisprimen)
-	- [aMath.range(n[, m])](https://github.com/ArtskydJ/array-math#amathrangen-m)
-	- [aMath.multiply(a)](https://github.com/ArtskydJ/array-math#amathmultiplya)
-	- [aMath.sum(a)](https://github.com/ArtskydJ/array-math#amathsuma)
-	- [aMath.factorial(h[, l])](https://github.com/ArtskydJ/array-math#amathfactorialh-l)
-- [Example](https://github.com/ArtskydJ/array-math#example)
-- [License](https://github.com/ArtskydJ/array-math#license)
+- [Install](#install)
+- [Require](#require)
+- [Methods](#methods)
+	- [aMath.factors(n)](#amathfactorsn)
+	- [aMath.divisors(n)](#amathdivisorsn)
+	- [aMath.isPrime(n)](#amathisprimen)
+	- [aMath.range(n[, m])](#amathrangen-m)
+	- [aMath.multiply(a)](#amathmultiplya)
+	- [aMath.sum(a)](#amathsuma)
+	- [aMath.factorial(h[, l])](#amathfactorialh-l)
+- [Example](#example)
+- [License](#license)
 
 ##Install
 	npm install array-math
