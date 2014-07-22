@@ -25,7 +25,7 @@ array-math
 ##Methods
 ##aMath.factors(n)
 
-n is a positive integer
+`n` is a positive integer
 
 	aMath.factors(2)   // -> [2]
 	aMath.factors(96)  // -> [2, 2, 2, 2, 2, 3]
@@ -33,7 +33,7 @@ n is a positive integer
 
 ##aMath.divisors(n)
 
-n is a positive integer
+`n` is a positive integer
 
 	aMath.divisors(2)   // -> [2]
 	aMath.divisors(96)  // -> [1, 2, 3, 4, 6, 8, 12, 16, 24, 32, 48, 96]
@@ -41,7 +41,7 @@ n is a positive integer
 
 ##aMath.isPrime(n)
 
-n is a positive integer
+`n` is a positive integer
 
 	aMath.isPrime(2)   // -> true
 	aMath.isPrime(3)   // -> true
@@ -55,7 +55,7 @@ n is a positive integer
 
 ##aMath.range(n[, m])
 
-n is a number. If the m parameter was passed in, then n is the low number and m is the high number. If the m parameter was not passed in, then n is the high number. (See examples below.)
+`n` is a number. If the `m` parameter was passed in, then `n` is the low number and m is the high number. If the m parameter was not passed in, then n is the high number. (See examples below.)
 
 	aMath.range(0)     // -> []
 	aMath.range(1)     // -> [0]
@@ -69,7 +69,7 @@ n is a number. If the m parameter was passed in, then n is the low number and m 
 
 ##aMath.multiply(a)
 
-a is an array of numbers (integers, floats, negative, whatever)
+`a` is an array of numbers (integers, floats, negative, whatever)
 
 	aMath.multiply([2, 96, 100])         // -> 19200
 	aMath.multiply([40, 3, 17])          // -> 2040
@@ -78,7 +78,7 @@ a is an array of numbers (integers, floats, negative, whatever)
 	
 ##aMath.sum(a)
 
-a is an array of numbers (integers, floats, negative, whatever)
+`a` is an array of numbers (integers, floats, negative, whatever)
 	
 	aMath.sum([2, 96, 100])  // -> 198
 	aMath.sum([2, -96, 100]) // -> 6
@@ -86,8 +86,8 @@ a is an array of numbers (integers, floats, negative, whatever)
 
 ##aMath.factorial(h[, l])
 
-h is a number. It is the high number. It defaults to 0.  
-l is a number. It is the low number. It defaults to 0.  
+`h` is a number. It is the high number. It defaults to 0.  
+`l` is a number. It is the low number. It defaults to 0.  
 While multiplying, it will never multiply by 0.
 
 	aMath.factorial()      // -> 1

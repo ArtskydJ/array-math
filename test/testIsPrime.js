@@ -2,8 +2,8 @@
 var aMath = require('../index.js')
 
 test('Check the prime function', function(t) {
-	var testThese = [2, 3, 4, 7, 15, 16, 23, 77]
-	var checkAgainst = [true, true, false, true, false, false, true, false]
+	var testThese = [2, 3, 4, 5, 7, 15, 16, 23, 77]
+	var checkAgainst = [true, true, false, true, true, false, false, true, false]
 
 	testThese.forEach(function (val, ind) {
 		t.similar(aMath.isPrime(val), checkAgainst[ind],
