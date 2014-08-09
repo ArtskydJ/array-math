@@ -18,10 +18,16 @@ array-math
 - [License](#license)
 
 ##Install
+
+Install with [NPM](http://nodejs.org)
+
 	npm install array-math
 	
 ##Require
-	var aMath = require('array-math')
+
+```js
+var aMath = require('array-math')
+```
 
 ##Methods
 ##aMath.factors(n)
@@ -34,14 +40,17 @@ aMath.factors(96)  // -> [2, 2, 2, 2, 2, 3]
 aMath.factors(100) // -> [2, 2, 5, 5]
 ```
 
-##aMath.divisors(n)
+##aMath.divisors(n[, opts])
 
-- `n` must be a positive integer
+- `n` must be a positive number.
+- `opts` is an object with the options. Defaults to `{}`.
+	- `proper` can be inside `opts`. If `true`, it will make the resulting array not include `n`. Defaults to `false`.
 
 ```js
-aMath.divisors(2)   // -> [2]
-aMath.divisors(96)  // -> [1, 2, 3, 4, 6, 8, 12, 16, 24, 32, 48, 96]
-aMath.divisors(100) // -> [1, 2, 4, 5, 10, 20, 25, 50, 100]
+aMath.divisors(2)                  // -> [2]
+aMath.divisors(96)                 // -> [1, 2, 3, 4, 6, 8, 12, 16, 24, 32, 48, 96]
+aMath.divisors(100)                // -> [1, 2, 4, 5, 10, 20, 25, 50, 100]
+aMath.divisors(100, {proper:true}) // -> [1, 2, 4, 5, 10, 20, 25, 50]
 ```
 
 ##aMath.isPrime(n)
@@ -60,11 +69,14 @@ aMath.isPrime(113) // -> true
 aMath.isPrime(117) // -> false
 ```
 
-##aMath.range(n[, m])
+##aMath.range([start,] stop [,step])
 
-- `n` must be a number. If the `m` parameter was passed in, then `n` is the low number and m is the high number. If the m parameter was not passed in, then n is the high number. (See examples below.)
+- `start` is the starting number of the range. Defaults to `0`. If there are 2 or 3 arguments, this is assumed to be the first.
+- `stop` is the ending number of the range. Defaults to `0`. If there is 1 argument, this is assumed to be it.
+- `step` is the step between each number. Defaults to `1`. This is may not be `0`, and is set to `1` if it is.
 
 ```js
+aMath.range()      // -> []
 aMath.range(0)     // -> []
 aMath.range(1)     // -> [0]
 aMath.range(2)     // -> [0, 1]
@@ -78,7 +90,7 @@ aMath.range(5, 10) // -> [5, 6, 7, 8, 9]
 
 ##aMath.multiply(a)
 
-- `a` must be an array of numbers (integers, floats, negative, whatever)
+- `a` must be an array of numbers (integers, floats, negative, whatever).
 
 ```js
 aMath.multiply([2, 96, 100])         // -> 19200
@@ -89,7 +101,7 @@ aMath.multiply([520, 0.2, 0.2, 0.8]) // -> 16.64
 
 ##aMath.sum(a)
 
-- `a` must be an array of numbers (integers, floats, negative, whatever)
+- `a` must be an array of numbers (integers, floats, negative, whatever).
 
 ```js
 aMath.sum([2, 96, 100])  // -> 198

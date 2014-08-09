@@ -1,6 +1,6 @@
 ﻿function factors(n) {
 	var result = []
-	var startN = n
+	var startN = Math.abs(Math.round(n))
 	var finished = false
 	while(!finished) {
 		finished = true
@@ -19,25 +19,26 @@
 }
 
 function divisors(n, opts) {
-	opts = opts?opts:{}
+	var safeN = Math.abs(Math.round(n))
+	if (Math.abs(n)===safeN)
+	opts = opts || {}
 	var result = [1]
-	for (var i=2; i<=n/2; i++)
-		if (n%i==0)
+	for (var i=2; i<=safeN/2; i++)
+		if (safeN%i==0)
 			result.push(i)
 	if (!opts.proper)
-		result.push(n)
+		result.push(safeN)
 	return result
 }
 
-function isPrime(num) {
-	var n = num
+function isPrime(n) {
+	var safeN = Math.abs(Math.round(n))
 	if (!n) {
 		return false
 	} else if (n!==2) {
-		n = Math.abs(n)
-		var goUntil = Math.ceil(Math.sqrt(n))
+		var goUntil = Math.ceil(Math.sqrt(safeN))
 		for (var i=2; i<=goUntil; i++) {
-			if (n%i==0) {
+			if (safeN%i==0) {
 				return false
 			}
 		}
@@ -45,20 +46,15 @@ function isPrime(num) {
 	return true
 }
 
-function range(low, high) {
-	if (typeof low === 'undefined') {
-		low = 0
-		high = 0
-	} else if (high && high<low) {
-		var t = low
-		low = high
-		high = t
-	} else if (!high) {
-		high = low
-		low = 0
+function range() {
+	var start = 0, step = 1, stop = arguments[0] || 0
+	if (arguments.length>=2) {
+		start = arguments[0] || 0
+		stop =  arguments[1] || 0
+		step =  arguments[2] || 1
 	}
 	var result = []
-	for(var i=low; i<high; i++)
+	for(var i=start; i!=stop && (i>stop == i-step>stop); i+=step)
 		result.push(i)
 	return result
 }

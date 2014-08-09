@@ -44,3 +44,14 @@ test('Check the low-high functionality of the range function', function(t) {
 	})
 	t.end()
 })
+
+
+test('Check for anomalous conditions', function(t) {
+	t.deepEqual(aMath.range(0, 3, 0),      [0, 1, 2],        'step set to 0 should default to 1')
+	t.deepEqual(aMath.range(5, 2, -1),     [5, 4, 3],        'negative step should be allowed')
+	t.deepEqual(aMath.range(1, 5.5),       [1, 2, 3, 4, 5],  'floating stop that never hits exactly should be allowed')
+	t.deepEqual(aMath.range(0, 2, 0.5),    [0, 0.5, 1, 1.5], 'floating step should be allowed')
+	t.deepEqual(aMath.range(4.3, 2, -0.5), [4.3, 3.8, 3.3, 2.8, 2.3], 'negative floating step, and floating start should be allowed')
+	t.deepEqual(aMath.range(-2, -5, -1),   [-2, -3, -4],     'passing stop should be allowed')
+	t.end()
+})
