@@ -46,16 +46,21 @@ function isPrime(n) {
 	return true
 }
 
-function range() {
-	var start = 0, step = 1, stop = arguments[0] || 0
-	if (arguments.length>=2) {
-		start = arguments[0] || 0
-		stop =  arguments[1] || 0
+function range() { //[start,] stop[, step]
+	var start = 0
+	var step = 1
+	var stop = 0
+	if (arguments.length === 1) {
+		stop = arguments[0]
+	} else if (arguments.length >== 2) {
+		start = arguments[0]
+		stop =  arguments[1]
 		step =  arguments[2] || 1
 	}
 	var result = []
-	for(var i=start; i!=stop && (i>stop == i-step>stop); i+=step)
+	for(var i=start; i!=stop && (i>stop == i-step>stop); i+=step) {
 		result.push(i)
+	}
 	return result
 }
 
@@ -70,7 +75,7 @@ function sum(a) {
 function factorial(high, low) {
 	if (typeof low === 'undefined')  low = 0
 	if (typeof high === 'undefined') high = 0
-	return multiply( range(low, high+1).filter(function(e) { return (e!==0) }) )
+	return multiply( range(low, high+1).filter(function (e) { return (e!==0) }) )
 }
 
 module.exports = {
