@@ -52,7 +52,7 @@ function range() { //[start,] stop[, step]
 	var stop = 0
 	if (arguments.length === 1) {
 		stop = arguments[0]
-	} else if (arguments.length >== 2) {
+	} else if (arguments.length >= 2) {
 		start = arguments[0]
 		stop =  arguments[1]
 		step =  arguments[2] || 1
