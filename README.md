@@ -7,9 +7,10 @@ array-math
 
 Sorry, I built this before I learned the truth about modularity. See the following links for enlightenment. ;-)
 
-- http://substack.net/finding_modules
-- http://substack.net/how_I_write_modules
-- http://substack.net/many_things
+- [Basics of the Unix Philosophy](http://www.faqs.org/docs/artu/ch01s06.html)
+- [Substack: Finding Modules](http://substack.net/finding_modules)
+- [Substack: How I Write Modules](http://substack.net/how_I_write_modules)
+- [Substack: Many Things](http://substack.net/many_things)
 
 # api
 
