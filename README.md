@@ -20,7 +20,7 @@ var aMath = require('array-math')
 
 # aMath.factors(n)
 
-*If you only want this function, try [primefactors](https://www.npmjs.com/package/primefactors).*
+*If you only want this function, try `primefactors` ([github](https://github.com/TJkrusinski/primefactors), [npm](https://www.npmjs.com/package/primefactors)).*
 
 - `n` must be a positive integer
 
@@ -47,7 +47,7 @@ aMath.divisors(100, {proper:true}) // -> [1, 2, 4, 5, 10, 20, 25, 50]
 
 # aMath.isPrime(n)
 
-*If you only want this function, try [isprime](https://www.npmjs.com/package/isprime).*
+*If you only want this function, try `isprime` ([github](https://github.com/TJkrusinski/isprime), [npm](https://www.npmjs.com/package/isprime)).*
 
 - `n` must be a positive integer
 
@@ -65,7 +65,7 @@ aMath.isPrime(117) // -> false
 
 # aMath.range([start,] stop [,step])
 
-*If you only want this function, try [array-range](https://www.npmjs.com/package/array-range). (Does not have stepping built in.)*
+*If you only want this function, try `array-range` ([github](https://github.com/mattdesl/array-range), [npm](https://www.npmjs.com/package/array-range)). (Does not have stepping built in.)*
 
 - `start` is the starting number of the range. Defaults to `0`. If there are 2 or 3 arguments, this is assumed to be the first.
 - `stop` is the ending number of the range. Defaults to `0`. If there is 1 argument, this is assumed to be it.
@@ -103,7 +103,7 @@ aMath.multiply([520, 0.2, 0.2, 0.8]) // -> 16.64
 
 # aMath.sum(a)
 
-*If you only want this function, it might be best to just write it yourself:*
+*If you only want this function, try `math-sum` ([github](https://github.com/sindresorhus/math-sum), [npm](https://www.npmjs.com/package/math-sum))*
 
 ```js
 arr.reduce(function (sum, val) { return sum + val }, 0)
@@ -119,11 +119,10 @@ aMath.sum([45, 20, 8.3]) // -> 73.3
 
 # aMath.factorial(h[, l])
 
-*If you only want this function, try [factorial](https://www.npmjs.com/package/factorial). (Does not have low number built in.)*
+*If you only want this function, try `factorial` ([github](https://github.com/wearefractal/factorial), [npm](https://www.npmjs.com/package/factorial)). (Does not have low number built in.)*
 
-- `h` must be a number. It is the high number. It defaults to 0.  
-- `l` must be a number. It is the low number. It defaults to 0.  
-While multiplying, it will never multiply by 0.
+- `h` must be a number. It is the high number. It defaults to 0.
+- `l` must be a number. It is the low number. It defaults to 0. While multiplying, it will never multiply by 0.
 
 ```js
 aMath.factorial()      // -> 1
